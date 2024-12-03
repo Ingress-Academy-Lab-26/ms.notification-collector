@@ -22,6 +22,9 @@ dependencies {
     //spring
     implementation "org.springframework.boot:spring-boot-starter-web"
 
+    // Aop
+    implementation "org.springframework.boot:spring-boot-starter-aop"
+
     //lombok
     compileOnly "org.projectlombok:lombok"
     annotationProcessor "org.projectlombok:lombok"
@@ -34,6 +37,12 @@ dependencies {
     testImplementation "org.spockframework:spock-spring:$spockSpringVersion"
     testImplementation "io.github.benas:random-beans:$randomBeansVersion"
     testImplementation "org.springframework.boot:spring-boot-starter-test"
+
+    //amqp
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+
+    //configuration
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 }
 
 test {
